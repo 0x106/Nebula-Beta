@@ -18,7 +18,9 @@ Run your Unity scene. You should see your GameObjects displayed as if they were 
 
 
 
+### Coming soon..
 
+We are building a Swift library that will allow you to test augmented reality apps developed for iOS without having to run the app from scratch every time. 
 
 
 
