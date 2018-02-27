@@ -13,6 +13,18 @@ Your Unity project will then include the following structure:
     + Assets
         - nebula.cs
         + Resources
+            + NebulaTextures
+```
+
+To use Nebula in Unity you will need to provide a valid scene, recorded using our iOS app. Scenes recorded with our app can be retrieved from our [cloud platform](http://nebula-ar.herokuapp.com/dashboard).
+
+Once you have recorded a scene and downloaded the zip file, simply move all the contents of the folder to your `Resources` folder in your unity project. Place all the images inside `NebulaTextures` and the `data.json` file inside `Resources`, like so:
+
+
+```
+    + Assets
+        - nebula.cs
+        + Resources
             - data.json
             + NebulaTextures
                 - <filename_01>.jpg
@@ -20,14 +32,7 @@ Your Unity project will then include the following structure:
                 - <filename_n>.jpg
 ```
 
-
-To use Nebula in Unity you will need to provide a valid scene, recorded using our iOS app. Scenes recorded with our app can be retrieved from our [cloud platform](http://nebula-ar.herokuapp.com/dashboard).
-
-Once you have recorded a scene and downloaded the zip file, simply move all the contents of the folder to your `Resources` folder in your unity project.
-
 Run your Unity scene. You should see your GameObjects displayed as if they were part of the original recording. You can move and adjust your GameObjects as you normally would while in Play mode.
-
-
 
 ### Coming soon..
 
