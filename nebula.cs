@@ -1,3 +1,18 @@
+
+// Copyright 2018 Jordan Campbell
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// 		http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,7 +61,7 @@ public class main : MonoBehaviour {
 
 		cameraData.data = sortedData;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -80,11 +95,11 @@ public class main : MonoBehaviour {
 		p.m00 = cameraData.data[counter].intrinsics.m00 * alpha + gamma;
 		p.m01 = cameraData.data[counter].intrinsics.m01 * alpha;
 		p.m02 = cameraData.data[counter].intrinsics.m02 * alpha + deltaX;
-		
+
 		p.m10 = cameraData.data[counter].intrinsics.m10 * alpha;
 		p.m11 = cameraData.data[counter].intrinsics.m11 * alpha + gamma;
 		p.m12 = cameraData.data[counter].intrinsics.m12 * alpha + deltaY;
-		
+
 		p.m20 = cameraData.data[counter].intrinsics.m20 * alpha;
 		p.m21 = cameraData.data[counter].intrinsics.m21 * alpha;
 		p.m22 = cameraData.data[counter].intrinsics.m22 * alpha;
@@ -136,4 +151,3 @@ public class CameraData {
 	public Frame[] data;
 	public string[] keys;
 }
-	
