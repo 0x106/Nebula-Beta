@@ -11,25 +11,24 @@ Your Unity project will then include the following structure:
 
 ```
     + Assets
-        - nebula.cs
+        - nebula
         + Resources
             + NebulaTextures
 ```
 
-To use Nebula in Unity you will need to provide a valid scene, recorded using our iOS app. Scenes recorded with our app can be retrieved from our [cloud platform](http://nebula-ar.herokuapp.com/dashboard).
+To use Nebula in Unity you will need to provide a valid scene, recorded using our iOS app. Scenes recorded with our app can be retrieved from our [cloud platform](http://nebula-ar.herokuapp.com/dashboard). Click on the scene you want to use and it will download a zip file containing a list of images and a `data.json` file.
 
-Once you have recorded a scene and downloaded the zip file, simply move all the contents of the folder to your `Resources` folder in your unity project. Place all the images inside `NebulaTextures` and the `data.json` file inside `Resources`, like so:
+Once you have recorded a scene and downloaded the zip file, move all the contents of the folder to your `Resources` folder in your unity project. Place all the images inside `NebulaTextures` and the `data.json` file inside `Resources`, like so:
 
 
 ```
     + Assets
-        - nebula.cs
+        - nebula                          // script
         + Resources
-            - data.json
+            - data.json                   // retrieved from web
             + NebulaTextures
-                - <filename_01>.jpg
-                - ...
-                - <filename_n>.jpg
+                - <filename_01>.jpg       // retrieved from web
+                - <filename_02>.jpg       // retrieved from web
 ```
 
 Run your Unity scene. You should see your GameObjects displayed as if they were part of the original recording. You can move and adjust your GameObjects as you normally would while in Play mode.
@@ -46,8 +45,11 @@ With our web editor you will be able to create augmented reality experiences wit
 
 
 
+## Contact
 
+Please feel free to get in contact with any questions, comments, or suggestions. We're also looking for collaborators if you want to be involved further.
 
+jordan@jordancampbell.org
 
 
 
