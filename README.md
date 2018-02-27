@@ -31,11 +31,11 @@ Run your Unity scene. You should see your GameObjects displayed as if they were 
 
 ### Coming soon..
 
-1. Swift Library
+__Swift Library__
 
 We are building a library that will allow you to test augmented reality apps developed for iOS without having to run the app from scratch every time.
 
-1. Web Editor
+__Web Editor__
 
 With our web editor you will be able to create augmented reality experiences without needing an actual device. This makes testing faster and allows you to build experiences for specific locations.
 
